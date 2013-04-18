@@ -1,0 +1,8 @@
+<div ng-controller="myController">
+    <form>
+        <label for="firstName">First Name: </label><input id="firstName" type="text" ng-model="model.firstName"/>
+        <label for="lastName">Last Name: </label><input id="lastName" type="text" ng-model="model.lastName"/>
+    </form>
+    <div>Hello, {{model.getFullName()}}</div>
+    <div>Current time is: <span my-current-time="format"></span></div>
+</div>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+    <script src="lib/angular/angular.js" type="text/javascript"></script>
+    <script src="app/app.js" type="text/javascript"></script>
+    <script src="controllers/controllers.js" type="text/javascript"></script>
+    <script src="directives/directives.js" type="text/javascript"></script>
+</head>
+<body>
+<div ng-controller="myController">
+    <input type="text" ng-model="format"/>
+    <div>Time format is: {{format}}</div>
+    <div>Current time is: <span my-current-time="format"></span></div>
+</div>
+</body>
+</html>
